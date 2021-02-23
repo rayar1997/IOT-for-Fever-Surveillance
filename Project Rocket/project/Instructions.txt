@@ -1,0 +1,18 @@
+CODES :
+	(i) client.py [Sends the image to a server that is hosted next]
+	(ii) main.py  [Gets the image sent to the server by the client]
+       (iii) view.py  [Hosts the server to allow image transfers]
+	(iv) depth_face_detect.py 
+		[Experimental code : Finds the distance of a detected face on the rgb camera and 
+			             also gets the temperature from lepton]
+	(v) Lepton Folder (not added due to size constraints but added files individually) has the Lepton3 library that is used to capture the thermal image and 		compute temperature.
+	(vi) Haar cascade frontal face default xml file in data that contains the pre trained face detection model.
+Execution : 
+	(i) Run client.py first to allow it to send the computed image with all detections done and ready to be hosted.
+	(ii) Run main.py to get the image sent to the server by the client. 
+	(iii) Run view.py which is the server that is hosted to allow the image to be transferred to view on a website.
+	
+
+	Once the above is done,
+		Hit the address with a webserver hosted locally at 127.0.0.1:5002 
+		You will see the ADMIN INTERFACE with the video streamed with the detected faces and temperatures.
